@@ -23,7 +23,7 @@ function drumClicked(drumId, audioId) {
     setTimeout(function () {
         drumElement.classList.toggle("clicked");
 
-    }, 100)
+    }, 130)
 }
 
 //FUNCION CLICK MOUSE SONIDOS
@@ -40,9 +40,47 @@ document.getElementById("d10").addEventListener("mousedown", function () { drumC
 
 
 //Function PLay with Keyboard
-window.addEventListener('keydown', function(x){
-    const audio= document.querySelector(`audio[data-key="${x.keyCode}"]`);
-    if(!audio) return;
-    audio.currentTime = 0;
-    audio.play();
+// window.addEventListener('keydown', function (x) {
+//     const audio = document.querySelector(`audio[data-key="${x.keyCode}"]`);
+//     if (!audio) return;
+//     audio.currentTime = 0;
+//     audio.play();
+// })
+
+window.addEventListener('keydown', function (x) {
+    const audio = document.querySelector(`audio[data-key="${x.keyCode}"]`);
+    console.log(x.key);
+
+    switch (x.key) {
+        case "q":
+            drumClicked("d1", "audio1")
+            break;
+        case "w":
+            drumClicked("d5", "audio5")
+            break;
+        case "e":
+            drumClicked("d6", "audio6")
+            break;
+        case "r":
+            drumClicked("d2", "audio2")
+            break;
+        case "a":
+            drumClicked("d3", "audio3")
+            break;
+        case "s":
+            drumClicked("d7", "audio7")
+            break;
+        case "d":
+            drumClicked("d8", "audio8")
+            break;
+        case "f":
+            drumClicked("d4", "audio4")
+            break;
+        case "z":
+            drumClicked("d9", "audio9")
+            break;
+        case "x":
+            drumClicked("d10", "audio10")
+            break;
+    }
 })
