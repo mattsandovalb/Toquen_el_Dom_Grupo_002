@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instrumento interactivo</title>
+    <style>
+        .clicked {
+            fill: #ffff936e;
+        }
+
+        .drum-element {
+            /*   transform-origin: center; */
+        }
+
+        svg {
+            overflow: visible;
+            box-shadow: 0px -0px 10000px transparent;
+        }
+    </style>
+</head>
+
+<body>
+    <main> 
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1061" height="657"
+            viewBox="0 0 1061 657" fill="none">
+            <g id="Drums">
+                <rect id="image 2" width="1061" height="657" rx="65" fill="url(#pattern0)" fill-opacity="0.87" />
+
+                <rect id="d10" x="487.547" y="324" width="51.4911" height="177.277" rx="10"
+                    transform="rotate(0.5 487.547 324)" fill="#D4D4D4" fill-opacity="0.01" /> 
+
+                <rect id="d9" x="163.371" y="474.346" width="51.4911" height="177.277" rx="10"
+                    transform="rotate(-37.5 163.371 474.346)" fill="#D4D4D4" fill-opacity="0.01" />
+                <g id="d8">
+                    <circle cx="694.5" cy="463.5" r="104.5" fill="#D5D5D5" fill-opacity="0.01" />
+                    <circle cx="694.5" cy="463.5" r="97" stroke="#D4D4D4" stroke-opacity="0.01" stroke-width="15" />
+                </g>
+                <g id="d7">
+                    <circle cx="374.5" cy="463.5" r="104.5" fill="#D5D5D5" fill-opacity="0.01" />
+                    <circle cx="374.5" cy="463.5" r="97" stroke="#D4D4D4" stroke-opacity="0.01" stroke-width="15" />
+                </g>
+                <g id="d6">
+                    <circle cx="604" cy="249" r="91" fill="#D5D5D5" fill-opacity="0.01" />
+                    <circle cx="604" cy="249" r="83.5" stroke="#D4D4D4" stroke-opacity="0.01" stroke-width="15" />
+                </g>
+                <g id="d5">
+                    <circle cx="419" cy="238" r="91" fill="#D5D5D5" fill-opacity="0.01" />
+                    <circle cx="419" cy="238" r="83.5" stroke="#D4D4D4" stroke-opacity="0.01" stroke-width="15" />
+                </g>
+                <circle id="d4" cx="911.5" cy="463.5" r="124.5" fill="#D4D4D4" fill-opacity="0.01" />
+                <circle id="d3" cx="123" cy="380" r="105" fill="#D4D4D4" fill-opacity="0.01" />
+                <circle id="d2" cx="815" cy="158" r="142" fill="#D4D4D4" fill-opacity="0.01" />
+                <circle id="d1" cx="221.5" cy="174.5" r="125.5" fill="#D4D4D4" fill-opacity="0.01" />
+            </g>
+            <defs>
+                <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                    <use xlink:href="#image0_24_189" transform="translate(0 -0.307458) scale(0.00104167 0.0016822)" />
+                </pattern>
+                <image id="image0_24_189" data-name="image.png" width="960" height="960"
+                    xlink:href="https://i.ibb.co/Y2GXYzC/COjobwU.png" />
+            </defs>
+        </svg>
+
+        <audio id="audio1" controls>
+            <source src="https://www.fesliyanstudios.com/play-mp3/6653">
+            Your browser does not support the audio element.
+        </audio>
+    </main>
+    <script>
+        const bass = ["https://www.fesliyanstudios.com/play-mp3/6653"]
+        var audio1 = document.getElementById("audio1");
+
+        function drumClicked() {
+            audio1.currentTime = 0;
+            audio1.play()
+        }
+        document.getElementById("d1").addEventListener("mousedown", function () { drumClicked("d1") })
+        document.getElementById("d2").addEventListener("mousedown", function () { drumClicked("d2") })
+        document.getElementById("d3").addEventListener("mousedown", function () { drumClicked("d3") })
+        document.getElementById("d4").addEventListener("mousedown", function () { drumClicked("d4") })
+
+
+    </script>
+
+
+</body>
+
+</html>
