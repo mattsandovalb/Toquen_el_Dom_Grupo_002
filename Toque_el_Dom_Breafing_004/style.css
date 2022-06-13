@@ -4,56 +4,65 @@
     margin: 0;
     padding: 0;
 }
+
 /*******navbar*/
 header {
-    
+
     position: fixed;
-    background-color: #ffb703;    
+    background-color: #ffb703;
     left: 0;
     right: 0;
     top: 0px;
     bottom: auto;
     height: 80px;
-    display: flex; 
-    justify-content: space-between;  
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    border:1px solid #ffb703; border-radius:1em;  
-    
-    
+    border: 1px solid #ffb703;
+    border-radius: 1em;
+
+
 }
 
-header nav img{
+header nav img {
     width: 65px;
-    height: 60px;     
-    border:5px solid #023047; border-radius:120em; 
+    height: 60px;
+    border: 5px solid #023047;
+    border-radius: 120em;
     background-color: white;
     margin: 0 1000px 0 30px;
 }
-header div{
+
+header div {
     justify-content: center;
     align-items: center;
-}        
-.background{
-        display: flex;
-        align-items: center;
-        
 }
-div button{
-        
-    width: 120px;
-    height: 55px;
-    border:1px solid #ffb703; border-radius:1em;
-    background: #023047;
-    color: white;      
-    cursor: pointer;
-    font-size: 18px;
-    
-}
-button:hover{
-background-color: #fb8500;
-color: black;
+
+.background {
+    display: flex;
+    align-items: center;
 
 }
+
+div button {
+
+    width: 120px;
+    height: 55px;
+    border: 1px solid #ffb703;
+    border-radius: 1em;
+    background: #023047;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+
+}
+
+button:hover {
+    background-color: #fb8500;
+    color: black;
+
+}
+
 /*.....*/
 
 html {
@@ -118,7 +127,7 @@ html {
     text-align: justify;
 }
 
-.info__descripcion{
+.info__descripcion {
     width: 100%;
     height: 550px;
     display: flex;
@@ -126,29 +135,29 @@ html {
     align-items: center;
 }
 
-.info__img{
+.info__img {
     width: 50%;
     height: 512px;
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 }
 
-.info__contexto{
+.info__contexto {
     width: 34%;
 }
 
-.info__contexto p{
+.info__contexto p {
     font-size: 2rem;
     font-family: 'Inter', sans-serif;
     font-weight: bold;
     text-align: justify;
     color: var(--azul-oscuro);
-    
+
 }
 
-.info__button{
+.info__button {
     width: 223px;
     height: 56px;
     border-radius: 25px;
@@ -160,3 +169,26 @@ html {
 }
 
 /* Cristian CSS */
+
+
+/* css drums*/
+#Drums>circle {
+    opacity: 0.2;
+}
+
+.clicked {
+    /* fill: #ffff936e; */
+    fill: #f1deaeba;
+    filter: blur(10px);
+    transition: 0.1s;
+
+}
+
+.pedal {
+    opacity: 0.1;
+
+}
+
+#keys {
+    pointer-events: none;
+}
