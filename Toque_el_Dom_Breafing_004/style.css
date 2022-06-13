@@ -1,10 +1,110 @@
+/* Quitamos bordes y paddings Cris */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
 /* Colores 
  */
-
-:root{
-    --celeste:#8ECAE6;
-    --azul-claro:#219EBC;
-    --azul-oscuro:#023047;
-    --amarillo:#FFB703;
-    --naranja:#FB8500;
+:root {
+    --celeste: #8ECAE6;
+    --azul-claro: #219EBC;
+    --azul-oscuro: #023047;
+    --amarillo: #FFB703;
+    --naranja: #FB8500;
 }
+
+
+
+
+/* Cristian CSS */
+
+.info__container {
+    width: 100%;
+    height: 783px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    justify-content: center;
+    align-items: center;
+}
+
+.info__titulo {
+    height: 102px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 27px;
+}
+
+.info__titulo h1 {
+    font-size: 8.7rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    color: var(--amarillo);
+}
+
+.info__parrafo {
+    width: 100%;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 22px;
+}
+
+.info__parrafo p {
+    width: 42%;
+    font-size: 1.8rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    color: var(--azul-oscuro);
+    text-align: justify;
+}
+
+.info__descripcion{
+    width: 100%;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info__img{
+    width: 50%;
+    height: 512px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info__contexto{
+    width: 34%;
+}
+
+.info__contexto p{
+    font-size: 2rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    text-align: justify;
+    color: var(--azul-oscuro);
+    
+}
+
+.info__button{
+    width: 223px;
+    height: 56px;
+    border-radius: 25px;
+    background-color: #219EBC;
+    border: none;
+    font-size: 3.5rem;
+    font-family: 'Inter', sans-serif;
+    color: white;
+}
+
+/* Cristian CSS */
