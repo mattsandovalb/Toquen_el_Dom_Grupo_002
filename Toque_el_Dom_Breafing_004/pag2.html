@@ -7,30 +7,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Instrumento interactivo</title>
     <style>
+        #Drums>circle {
+            opacity: 0.2;
+        }
+
         .clicked {
-            fill: #ffff936e;
+            /* fill: #ffff936e; */
+            fill: #f1deaeba;
+            filter: blur(10px);
+            transition: 0.1s;
+
         }
 
-        .drum-element {
-            /*   transform-origin: center; */
-        }
-
-        svg {
-            overflow: visible;
-            box-shadow: 0px -0px 10000px transparent;
-        }
+       
     </style>
 </head>
 
 <body>
-    <main> 
+    <main>
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1061" height="657"
             viewBox="0 0 1061 657" fill="none">
             <g id="Drums">
                 <rect id="image 2" width="1061" height="657" rx="65" fill="url(#pattern0)" fill-opacity="0.87" />
 
                 <rect id="d10" x="487.547" y="324" width="51.4911" height="177.277" rx="10"
-                    transform="rotate(0.5 487.547 324)" fill="#D4D4D4" fill-opacity="0.01" /> 
+                    transform="rotate(0.5 487.547 324)" fill="#D4D4D4" fill-opacity="0.01" />
 
                 <rect id="d9" x="163.371" y="474.346" width="51.4911" height="177.277" rx="10"
                     transform="rotate(-37.5 163.371 474.346)" fill="#D4D4D4" fill-opacity="0.01" />
@@ -50,10 +51,10 @@
                     <circle cx="419" cy="238" r="91" fill="#D5D5D5" fill-opacity="0.01" />
                     <circle cx="419" cy="238" r="83.5" stroke="#D4D4D4" stroke-opacity="0.01" stroke-width="15" />
                 </g>
-                <circle id="d4" cx="911.5" cy="463.5" r="124.5" fill="#D4D4D4" fill-opacity="0.01" />
-                <circle id="d3" cx="123" cy="380" r="105" fill="#D4D4D4" fill-opacity="0.01" />
-                <circle id="d2" cx="815" cy="158" r="142" fill="#D4D4D4" fill-opacity="0.01" />
-                <circle id="d1" cx="221.5" cy="174.5" r="125.5" fill="#D4D4D4" fill-opacity="0.01" />
+                <circle id="d4" cx="911.5" cy="463.5" r="124.5" fill="#D4D4D4" />
+                <circle id="d3" cx="123" cy="380" r="105" fill="#D4D4D4" />
+                <circle id="d2" cx="815" cy="158" r="142" fill="#D4D4D4" />
+                <circle id="d1" cx="221.5" cy="174.5" r="125.5" fill="#D4D4D4" />
             </g>
             <defs>
                 <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
@@ -63,24 +64,34 @@
                     xlink:href="https://i.ibb.co/Y2GXYzC/COjobwU.png" />
             </defs>
         </svg>
-
+ 
         <audio id="audio1" controls>
             <source src="https://www.fesliyanstudios.com/play-mp3/6653">
             Your browser does not support the audio element.
         </audio>
     </main>
     <script>
-        const bass = ["https://www.fesliyanstudios.com/play-mp3/6653"]
         var audio1 = document.getElementById("audio1");
 
-        function drumClicked() {
+        function drumClicked(drumId) {
             audio1.currentTime = 0;
-            audio1.play()
+            audio1.play();
+
+            drumElement = document.getElementById(drumId)
+            drumElement.classList.toggle("clicked");
+            setTimeout(function () {
+                drumElement.classList.toggle("clicked");
+
+            }, 100)
         }
         document.getElementById("d1").addEventListener("mousedown", function () { drumClicked("d1") })
         document.getElementById("d2").addEventListener("mousedown", function () { drumClicked("d2") })
         document.getElementById("d3").addEventListener("mousedown", function () { drumClicked("d3") })
         document.getElementById("d4").addEventListener("mousedown", function () { drumClicked("d4") })
+        document.getElementById("d5").addEventListener("mousedown", function () { drumClicked("d5") })
+        document.getElementById("d6").addEventListener("mousedown", function () { drumClicked("d6") })
+        document.getElementById("d7").addEventListener("mousedown", function () { drumClicked("d7") })
+        document.getElementById("d8").addEventListener("mousedown", function () { drumClicked("d8") })
 
 
     </script>
