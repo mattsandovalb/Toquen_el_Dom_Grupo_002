@@ -4,6 +4,57 @@
     margin: 0;
     padding: 0;
 }
+/*******navbar*/
+header {
+    
+    position: fixed;
+    background-color: #ffb703;    
+    left: 0;
+    right: 0;
+    top: 0px;
+    bottom: auto;
+    height: 80px;
+    display: flex; 
+    justify-content: space-between;  
+    align-items: center;
+    border:1px solid #ffb703; border-radius:1em;  
+    
+    
+}
+
+header nav img{
+    width: 65px;
+    height: 60px;     
+    border:5px solid #023047; border-radius:120em; 
+    background-color: white;
+    margin: 0 1000px 0 30px;
+}
+header div{
+    justify-content: center;
+    align-items: center;
+}        
+.background{
+        display: flex;
+        align-items: center;
+        
+}
+div button{
+        
+    width: 120px;
+    height: 55px;
+    border:1px solid #ffb703; border-radius:1em;
+    background: #023047;
+    color: white;      
+    cursor: pointer;
+    font-size: 18px;
+    
+}
+button:hover{
+background-color: #fb8500;
+color: black;
+
+}
+/*.....*/
 
 html {
     font-size: 62.5%;
@@ -81,6 +132,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 .info__contexto{
