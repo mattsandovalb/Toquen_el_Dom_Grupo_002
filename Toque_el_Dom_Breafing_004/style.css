@@ -80,7 +80,7 @@ html {
     height: 783px;
     display: flex;
     flex-direction: column;
-    margin-top: 60px;
+    margin-top: 160px;
     justify-content: center;
     align-items: center;
 }
@@ -132,7 +132,8 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    background-color: #023047;
+    border:5px solid #023047; border-radius: 50em; 
 }
 
 .info__contexto{
