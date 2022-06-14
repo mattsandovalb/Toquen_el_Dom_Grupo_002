@@ -33,7 +33,10 @@ header {
     border: 1px solid #ffb703;
     border-radius: 2em;
 
+}
 
+.drummusic {
+    mix-blend-mode: difference;
 }
 
 header nav {
@@ -97,10 +100,17 @@ html {
     font-size: 62.5%;
 }
 
-
-
-
 /* Cristian CSS */
+.text-smol {
+
+    font-size: 1.7rem;
+
+}
+
+.text-padding {
+
+    padding: 0 333px 24px 390px;
+}
 
 .info__container {
     width: 100%;
@@ -118,10 +128,11 @@ html {
     justify-content: center;
     align-items: center;
     margin-bottom: 27px;
+    transition:  1s;
 }
 
-.info__titulo h1 {
-    font-size: 8.7rem;
+.info__titulo {
+    font-size: 6.9rem;
     font-family: 'Inter', sans-serif;
     font-weight: bold;
     color: var(--amarillo);
@@ -192,21 +203,29 @@ html {
 
 /* Hero */
 
+.flex-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-
-
-.container1 {
-    display: grid;
-    grid-template-columns: 1fr;
 }
 
 .container2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
 }
 
+/* .container2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+} */
+
 .hero-image {
-    width: 100%;
+    width: 50%;
+    padding: 50px;
 }
 
 .hidden {
@@ -241,4 +260,11 @@ html {
 
 .bateria_container svg {
     width: 100%;
+}
+
+
+/* animaitinl */
+
+.smull {
+    font-size: 20px;
 }

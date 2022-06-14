@@ -84,3 +84,17 @@ window.addEventListener('keydown', function (x) {
             break;
     }
 })
+
+
+// animatino
+
+window.onscroll = function () { scrollFunction() };
+function scrollFunction() {
+    //cambio en navbar
+    if ((document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) && window.screen.width > 768) {
+        document.querySelector(".info__titulo").classList.add("smull")
+    } else {
+        document.querySelector(".info__titulo").classList.remove("smull")
+    }
+
+}
