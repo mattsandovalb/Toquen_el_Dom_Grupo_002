@@ -15,22 +15,25 @@ header {
     top: 0px;
     bottom: auto;
     height: 80px;
-    display: flex;
-    justify-content: space-between;
+    /* display: flex; */
+    /* justify-content: space-between; */
     align-items: center;
     border: 1px solid #ffb703;
     border-radius: 1em;
 
 
 }
-
+header nav{
+    display: flex;
+    justify-content: space-between;
+}
 header nav img {
     width: 65px;
     height: 60px;
     border: 5px solid #023047;
     border-radius: 120em;
     background-color: white;
-    margin: 0 1000px 0 30px;
+    /* margin: 0 1000px 0 30px; */
 }
 
 header div {
@@ -61,6 +64,10 @@ button:hover {
     background-color: #fb8500;
     color: black;
 
+}
+
+.botones{
+    display: flex;
 }
 
 /*.....*/
