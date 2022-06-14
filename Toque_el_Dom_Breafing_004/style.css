@@ -1,3 +1,13 @@
+/* Colores
+ */
+:root {
+    --celeste: #8ECAE6;
+    --azul-claro: #219EBC;
+    --azul-oscuro: #023047;
+    --amarillo: #FFB703;
+    --naranja: #FB8500;
+}
+
 /* Quitamos bordes y paddings Cris */
 * {
     box-sizing: border-box;
@@ -7,26 +17,30 @@
 
 /*******navbar*/
 header {
-
+    /* width: 100%; */
     position: fixed;
     background-color: #ffb703;
     left: 0;
     right: 0;
     top: 0px;
     bottom: auto;
-    height: 80px;
+    padding: 10px;
+    margin: 10px 15px;
+    /* height: 80px; */
     /* display: flex; */
     /* justify-content: space-between; */
     align-items: center;
     border: 1px solid #ffb703;
-    border-radius: 1em;
+    border-radius: 2em;
 
 
 }
-header nav{
+
+header nav {
     display: flex;
     justify-content: space-between;
 }
+
 header nav img {
     width: 65px;
     height: 60px;
@@ -48,15 +62,22 @@ header div {
 }
 
 div button {
+    width: 92px;
+    height: 39px;
+    border: 1px solid #ffb703;
+    border-radius: 1em;
+    background: #023047;
+    color: white;
+    cursor: pointer;
 
-    width: 120px;
+    /* width: 120px;
     height: 55px;
     border: 1px solid #ffb703;
     border-radius: 1em;
     background: #023047;
     color: white;
     cursor: pointer;
-    font-size: 18px;
+    font-size: 18px; */
 
 }
 
@@ -66,7 +87,7 @@ button:hover {
 
 }
 
-.botones{
+.botones {
     display: flex;
 }
 
@@ -76,16 +97,6 @@ html {
     font-size: 62.5%;
 }
 
-/* Colores 
- */
-:root {
-    --celeste: #8ECAE6;
-    --azul-claro: #219EBC;
-    --azul-oscuro: #023047;
-    --amarillo: #FFB703;
-    --naranja: #FB8500;
-}
-
 
 
 
@@ -93,7 +104,7 @@ html {
 
 .info__container {
     width: 100%;
-    height: 783px;
+    /* height: 783px; */
     display: flex;
     flex-direction: column;
     margin-top: 160px;
@@ -102,8 +113,8 @@ html {
 }
 
 .info__titulo {
-    height: 102px;
-    display: flex;
+    /* height: 102px; */
+    /* display: flex; */
     justify-content: center;
     align-items: center;
     margin-bottom: 27px;
@@ -118,7 +129,7 @@ html {
 
 .info__parrafo {
     width: 100%;
-    height: 130px;
+    /* height: 130px; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -136,7 +147,7 @@ html {
 
 .info__descripcion {
     width: 100%;
-    height: 550px;
+    /* height: 550px; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -149,7 +160,8 @@ html {
     justify-content: center;
     align-items: center;
     background-color: #023047;
-    border:5px solid #023047; border-radius: 50em; 
+    border: 5px solid #023047;
+    border-radius: 50em;
 }
 
 .info__contexto {
@@ -178,6 +190,28 @@ html {
 
 /* Cristian CSS */
 
+/* Hero */
+
+
+
+
+.container1 {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.container2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.hero-image {
+    width: 100%;
+}
+
+.hidden {
+    display: none;
+}
 
 /* css drums*/
 #Drums>circle {
@@ -199,4 +233,12 @@ html {
 
 #keys {
     pointer-events: none;
+}
+
+.bateria_container {
+    width: 100%;
+}
+
+.bateria_container svg {
+    width: 100%;
 }
