@@ -111,6 +111,8 @@ html {
 .text-smol {
 
     font-size: 1.7rem;
+    text-align: justify;
+    padding: 22px;
 
 }
 
