@@ -264,6 +264,19 @@ html {
     pointer-events: none;
 }
 
+.bateria__titulo{
+    display: flex;
+    justify-content: center;
+}
+
+.bateria__titulo h2 {
+    font-size: 3.4rem;
+    font-weight: bold;
+    font-family: 'Inter', sans-serif;
+
+}
+
+
 .bateria_container {
     width: 100%;
 }
