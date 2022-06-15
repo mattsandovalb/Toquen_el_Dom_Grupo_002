@@ -8,6 +8,11 @@
     --naranja: #FB8500;
 }
 
+body {
+    font-family: 'Inter', sans-serif;
+
+}
+
 /* Quitamos bordes y paddings Cris */
 * {
     box-sizing: border-box;
@@ -30,9 +35,10 @@ header {
     /* justify-content: space-between; */
     align-items: center;
     border-radius: 2em;
-   
+
 
 }
+
 .drummusic {
     background-color: #ffb703;
     border: 1px solid #ffb703;
@@ -43,9 +49,10 @@ header {
 
 .drummusicfake {
     height: 80px;
-    
+
     background-color: black;
 }
+
 header nav {
     display: flex;
     justify-content: space-between;
@@ -109,7 +116,7 @@ html {
 
 /* Cristian CSS */
 .text-smol {
-
+    padding: 10px;
     font-size: 1.7rem;
     text-align: justify;
     padding: 22px;
@@ -233,8 +240,9 @@ html {
 } */
 
 .hero-image {
-    width: 30%;
+    width: 40%;
     padding: 50px;
+    z-index: -2;
 }
 
 .hidden {
@@ -262,6 +270,19 @@ html {
 #keys {
     pointer-events: none;
 }
+
+.bateria__titulo{
+    display: flex;
+    justify-content: center;
+}
+
+.bateria__titulo h2 {
+    font-size: 3.4rem;
+    font-weight: bold;
+    font-family: 'Inter', sans-serif;
+
+}
+
 
 .bateria_container {
     width: 100%;
