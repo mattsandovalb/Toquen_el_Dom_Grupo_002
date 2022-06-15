@@ -19,7 +19,6 @@
 header {
     /* width: 100%; */
     position: fixed;
-    background-color: #ffb703;
     left: 0;
     right: 0;
     top: 0px;
@@ -30,13 +29,22 @@ header {
     /* display: flex; */
     /* justify-content: space-between; */
     align-items: center;
-    border: 1px solid #ffb703;
     border-radius: 2em;
 
 }
 
 .drummusic {
+    background-color: #ffb703;
+    border: 1px solid #ffb703;
+
     mix-blend-mode: difference;
+    z-index: 2;
+}
+
+.drummusicfake {
+    height: 80px;
+    
+    background-color: black;
 }
 
 header nav {
@@ -128,7 +136,7 @@ html {
     justify-content: center;
     align-items: center;
     margin-bottom: 27px;
-    transition:  1s;
+    transition: 1s;
 }
 
 .info__titulo {
@@ -266,5 +274,11 @@ html {
 /* animaitinl */
 
 .smull {
-    font-size: 20px;
+    font-size: 30px;
+    padding-right: 117px;
+}
+
+.top-sticky {
+    position: sticky;
+    top: 31px
 }
