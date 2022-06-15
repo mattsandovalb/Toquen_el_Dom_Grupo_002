@@ -86,9 +86,10 @@ window.addEventListener('keydown', function (x) {
 })
 
 
-// animatino
+// animation
 
 window.onscroll = function () { scrollFunction() };
+var heroImg = document.querySelector(".hero-image");
 function scrollFunction() {
     //cambio en navbar
     if ((document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) && window.screen.width > 768) {
@@ -96,5 +97,5 @@ function scrollFunction() {
     } else {
         document.querySelector(".info__titulo").classList.remove("smull")
     }
-
+    heroImg.style.transform = "rotate(" + (window.pageYOffset / 5) + "deg)"
 }

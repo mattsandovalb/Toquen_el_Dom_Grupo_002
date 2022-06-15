@@ -8,6 +8,11 @@
     --naranja: #FB8500;
 }
 
+body {
+    font-family: 'Inter', sans-serif;
+
+}
+
 /* Quitamos bordes y paddings Cris */
 * {
     box-sizing: border-box;
@@ -31,6 +36,7 @@ header {
     align-items: center;
     border-radius: 2em;
 
+
 }
 
 .drummusic {
@@ -43,7 +49,7 @@ header {
 
 .drummusicfake {
     height: 80px;
-    
+
     background-color: black;
 }
 
@@ -110,7 +116,7 @@ html {
 
 /* Cristian CSS */
 .text-smol {
-
+    padding: 10px;
     font-size: 1.7rem;
     text-align: justify;
     padding: 22px;
@@ -223,7 +229,7 @@ html {
 .container2 {
     display: flex;
     flex-direction: row;
-
+    width: 100%;
     align-items: center;
 }
 
@@ -234,8 +240,9 @@ html {
 } */
 
 .hero-image {
-    width: 50%;
+    width: 40%;
     padding: 50px;
+    z-index: -2;
 }
 
 .hidden {
