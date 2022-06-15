@@ -35,9 +35,10 @@ header {
     /* justify-content: space-between; */
     align-items: center;
     border-radius: 2em;
-   
+
 
 }
+
 .drummusic {
     background-color: #ffb703;
     border: 1px solid #ffb703;
@@ -51,6 +52,7 @@ header {
 
     background-color: black;
 }
+
 header nav {
     display: flex;
     justify-content: space-between;
@@ -238,8 +240,9 @@ html {
 } */
 
 .hero-image {
-    width: 30%;
+    width: 40%;
     padding: 50px;
+    z-index: -2;
 }
 
 .hidden {
