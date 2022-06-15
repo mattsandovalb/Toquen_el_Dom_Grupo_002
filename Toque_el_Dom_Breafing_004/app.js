@@ -86,7 +86,7 @@ window.addEventListener('keydown', function (x) {
 })
 
 
-// animatino
+// animation
 
 window.onscroll = function () { scrollFunction() };
 function scrollFunction() {
