@@ -8,6 +8,11 @@
     --naranja: #FB8500;
 }
 
+body {
+    font-family: 'Inter', sans-serif;
+
+}
+
 /* Quitamos bordes y paddings Cris */
 * {
     box-sizing: border-box;
@@ -43,7 +48,7 @@ header {
 
 .drummusicfake {
     height: 80px;
-    
+
     background-color: black;
 }
 
@@ -110,9 +115,8 @@ html {
 
 /* Cristian CSS */
 .text-smol {
-
+    padding: 10px;
     font-size: 1.7rem;
-
 }
 
 .text-padding {
