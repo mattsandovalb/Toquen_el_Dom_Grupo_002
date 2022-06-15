@@ -1,10 +1,14 @@
 @media only screen and (max-width: 1008px) {
+
     /* For mobile phones: */
+    .drummusic {
+        mix-blend-mode: normal;
+    }
 
     .text-padding {
-
         padding: 0 10px 24px 10px;
     }
+
     .container2 {
         display: flex;
         flex-direction: column;
@@ -14,17 +18,13 @@
         width: 70%;
     }
 }
+
 @media only screen and (max-width: 708px) {
     /* For mobile phones: */
-/* 
-    .text-padding {
 
-        padding: 0 10px 24px 10px;
+    .info__titulo {
+        font-size: 2.9rem;
     }
-    .container2 {
-        display: flex;
-        flex-direction: column;
-    } */
 
     .hero-image {
         width: 100%;
