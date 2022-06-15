@@ -35,9 +35,9 @@ header {
     /* justify-content: space-between; */
     align-items: center;
     border-radius: 2em;
+   
 
 }
-
 .drummusic {
     background-color: #ffb703;
     border: 1px solid #ffb703;
@@ -51,7 +51,6 @@ header {
 
     background-color: black;
 }
-
 header nav {
     display: flex;
     justify-content: space-between;
@@ -117,6 +116,9 @@ html {
 .text-smol {
     padding: 10px;
     font-size: 1.7rem;
+    text-align: justify;
+    padding: 22px;
+
 }
 
 .text-padding {
@@ -225,7 +227,7 @@ html {
 .container2 {
     display: flex;
     flex-direction: row;
-
+    width: 100%;
     align-items: center;
 }
 
@@ -236,7 +238,7 @@ html {
 } */
 
 .hero-image {
-    width: 50%;
+    width: 30%;
     padding: 50px;
 }
 
