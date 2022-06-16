@@ -304,3 +304,38 @@ html {
     position: sticky;
     top: 31px
 }
+
+
+/* footer */
+
+footer{
+    width: 100%;
+    height: 200px;
+    background-color:#023047;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.contendor__top{
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor__bottom{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.contenedor-telefono {
+        font-size: medium;
+        color: greenyellow;
+        justify-content: space-around;
+    }
+
