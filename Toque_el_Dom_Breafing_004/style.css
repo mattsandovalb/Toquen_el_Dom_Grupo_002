@@ -100,7 +100,7 @@ div button {
 }
 
 button:hover {
-    background-color: #fb8500;
+    background-color: var(--amarillo);
     color: black;
 
 }
