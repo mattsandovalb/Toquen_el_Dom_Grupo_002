@@ -215,6 +215,24 @@ html {
     color: white;
 }
 
+
+.div_instrument{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 42px;
+}
+
+.div_instrument h2{
+    font-size: 4rem;
+    font-family: 'Inter', sans-serif;
+}
+
+.div_instrument p{
+    font-size: 1.7rem;
+    font-family: 'Inter', sans-serif;
+}
+
 /* Cristian CSS */
 
 /* Hero */
