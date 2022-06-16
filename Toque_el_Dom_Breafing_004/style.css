@@ -8,6 +8,11 @@
     --naranja: #FB8500;
 }
 
+body {
+    font-family: 'Inter', sans-serif;
+
+}
+
 /* Quitamos bordes y paddings Cris */
 * {
     box-sizing: border-box;
@@ -36,9 +41,16 @@ nav {
 
 }
 .drummusicfake {
+
     height: 80px;    
     background-color: black;
 }
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+}
+
 
 .logo .drum {
     width: 65px;
@@ -100,7 +112,7 @@ nav ul {
 
 nav ul li a:hover {
     background-color: #fb8500;
-    color: black;
+    color: white;
 
 }
 
@@ -114,7 +126,7 @@ html {
 
 /* Cristian CSS */
 .text-smol {
-
+    padding: 10px;
     font-size: 1.7rem;
     text-align: justify;
     padding: 22px;
@@ -213,6 +225,24 @@ html {
     color: white;
 }
 
+
+.div_instrument{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 42px;
+}
+
+.div_instrument h2{
+    font-size: 4rem;
+    font-family: 'Inter', sans-serif;
+}
+
+.div_instrument p{
+    font-size: 1.7rem;
+    font-family: 'Inter', sans-serif;
+}
+
 /* Cristian CSS */
 
 /* Hero */
@@ -238,8 +268,9 @@ html {
 } */
 
 .hero-image {
-    width: 30%;
+    width: 40%;
     padding: 50px;
+    z-index: -2;
 }
 
 .hidden {
@@ -267,6 +298,19 @@ html {
 #keys {
     pointer-events: none;
 }
+
+.bateria__titulo{
+    display: flex;
+    justify-content: center;
+}
+
+.bateria__titulo h2 {
+    font-size: 3.4rem;
+    font-weight: bold;
+    font-family: 'Inter', sans-serif;
+
+}
+
 
 .bateria_container {
     width: 100%;
