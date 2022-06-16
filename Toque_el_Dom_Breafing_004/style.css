@@ -16,8 +16,10 @@
 }
 
 /*******navbar*/
-header {
-    /* width: 100%; */
+nav {
+    
+    display: flex;
+    justify-content: space-between;
     position: fixed;
     left: 0;
     right: 0;
@@ -25,81 +27,84 @@ header {
     bottom: auto;
     padding: 10px;
     margin: 10px 15px;
-    /* height: 80px; */
-    /* display: flex; */
-    /* justify-content: space-between; */
     align-items: center;
     border-radius: 2em;
-   
-
-}
-.drummusic {
     background-color: #ffb703;
     border: 1px solid #ffb703;
-
     mix-blend-mode: difference;
     z-index: 2;
-}
 
+}
 .drummusicfake {
-    height: 80px;
-    
+    height: 80px;    
     background-color: black;
 }
-header nav {
-    display: flex;
-    justify-content: space-between;
-}
 
-header nav img {
+.logo .drum {
     width: 65px;
     height: 60px;
     border: 5px solid #023047;
     border-radius: 120em;
     background-color: white;
-    /* margin: 0 1000px 0 30px; */
+    
 }
 
-header div {
+.burger{
+    display: none;
+    cursor: pointer;
+}
+
+.burger div{
+    width: 25px;
+    height: 5px;
+    background-color: rgb(226, 226, 226);
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+nav ul {
     justify-content: center;
     align-items: center;
+    
 }
 
-.background {
+.drummusic {
     display: flex;
     align-items: center;
 
 }
 
-div button {
-    width: 92px;
-    height: 39px;
-    border: 1px solid #ffb703;
-    border-radius: 1em;
-    background: #023047;
-    color: white;
-    cursor: pointer;
-
-    /* width: 120px;
-    height: 55px;
-    border: 1px solid #ffb703;
-    border-radius: 1em;
-    background: #023047;
-    color: white;
-    cursor: pointer;
-    font-size: 18px; */
-
+.nav-links li{
+    list-style: none;
+    margin: 10px 50px 10px 10px;
+    
+    
 }
 
-button:hover {
+.nav-links a {
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-size: 20px;
+    border: 10px solid #023047;
+    border-radius: 12em;
+    background: #023047;
+    color: white;
+    cursor: pointer;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+}
+
+nav ul li a:hover {
     background-color: #fb8500;
     color: black;
 
 }
 
-.botones {
-    display: flex;
-}
+
 
 /*.....*/
 
@@ -282,4 +287,81 @@ html {
 .top-sticky {
     position: sticky;
     top: 31px
+}
+
+@media screen and (max-width:1024px) {
+    .nav-links{
+        width: 60%;
+    }
+    
+}
+
+@media screen and (max-width:768px) {
+    body{
+        overflow-x: hidden;
+    }
+
+    nav{
+        margin: 0 0 0 0;
+        border-radius: 0em;
+        background-color: #ffb703;
+        
+    }
+    .nav-links{
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: #ffb703;
+        display: flex;
+        flex-direction: column;
+        align-items: center;   
+        
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+    .nav-links li{
+        opacity: 0;
+        margin: 50px 50px 50px 50px;
+        
+    }
+
+    .nav-links li a{
+        background: none;
+        border: none;
+        padding: 10px 10px 10px 10px;
+       
+    }
+    .burger{
+        display: block;
+        cursor: pointer;
+        
+    }
+    
+}
+
+.nav-active{
+    transform: translateX(5%);
+}
+
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toggle .line1{
+    transform: rotate(-45deg translate(-5px,6px));
+}
+.toggle .line2{
+    opacity: 0;
+}
+.toggle .line3{
+    transform: rotate(45deg translate(-5px,-6px));
 }
