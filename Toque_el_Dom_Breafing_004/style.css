@@ -325,40 +325,44 @@ html {
 }
 
 
-
-
-
-
 /* FOOTER */
 
-footer{
+.general_footer{
     width: 100%;
-    height: 200px;
+    height: 100%;
     background-color:#023047;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
 
 .contendor__top{
     width: 100%;
-    background-color: white;
+    height: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.contenedor__top h4{
+    width: 100%;
+    font-size: 30px;
+    color: white;
+}
+
 .contenedor__bottom{
     width: 100%;
+    height: 50%;
     display: flex;
+    flex-direction: row;
     align-items: center;
+    margin-top: 2%;
     justify-content: space-around;
+    margin-bottom: 3%;
 }
-.contenedor-telefono {
-        font-size: medium;
-        color: greenyellow;
-        justify-content: space-around;
-    }
-
+footer p{
+    font-size: 10px;
+    color: white;
+    
+}
