@@ -1,39 +1,104 @@
+/* RESPONSIVE */
+@media screen and (max-width: 1024px) {
+  .nav-links {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+  nav {
+    margin: 0 0 0 0;
+    border-radius: 0em;
+    background-color: #ffb703;
+  }
+  .nav-links {
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 8vh;
+    background-color: #ffb703;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+  .nav-links li {
+    opacity: 0;
+    margin: 50px 50px 50px 50px;
+  }
+  .nav-links li a {
+    background: none;
+    border: none;
+    padding: 10px 10px 10px 10px;
+  }
+  .burger {
+    display: block;
+    cursor: pointer;
+  }
+}
+.nav-active {
+  transform: translateX(5%);
+}
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+.toggle .line1 {
+  transform: rotate(-45deg translate(-5px, 6px));
+}
+.toggle .line2 {
+  opacity: 0;
+}
+.toggle .line3 {
+  transform: rotate(45deg translate(-5px, -6px));
+}
+
 .container2 {
-    width: 80%;
+  width: 80%;
 }
 
 @media only screen and (max-width: 1008px) {
-    .container2 {
-        width: 100%;
-    }
+  .container2 {
+    width: 100%;
+  }
 
-    /* For mobile phones: */
-    .drummusic {
-        mix-blend-mode: normal;
-    }
+  /* For mobile phones: */
+  .drummusic {
+    mix-blend-mode: normal;
+  }
 
-    .text-padding {
-        padding: 0 10px 24px 10px;
-    }
+  .text-padding {
+    padding: 0 10px 24px 10px;
+  }
 
-    .container2 {
-        display: flex;
-        flex-direction: column;
-    }
+  .container2 {
+    display: flex;
+    flex-direction: column;
+  }
 
-    .hero-image {
-        width: 60%;
-    }
+  .hero-image {
+    width: 60%;
+  }
 }
 
 @media only screen and (max-width: 708px) {
-    /* For mobile phones: */
+  /* For mobile phones: */
 
-    .info__titulo {
-        font-size: 2.9rem;
-    }
+  .info__titulo {
+    font-size: 2.9rem;
+  }
 
-    .hero-image {
-        width: 100%;
-    }
+  .hero-image {
+    width: 100%;
+  }
 }
