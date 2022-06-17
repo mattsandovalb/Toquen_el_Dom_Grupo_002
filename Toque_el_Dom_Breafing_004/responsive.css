@@ -41,7 +41,7 @@
   }
 }
 .nav-active {
-  transform: translateX(5%);
+  transform: translateX(20%);
 }
 @keyframes navLinkFade {
   from {
