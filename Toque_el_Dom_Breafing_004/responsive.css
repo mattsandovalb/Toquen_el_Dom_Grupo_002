@@ -76,7 +76,10 @@
   .drummusic {
     mix-blend-mode: normal;
   }
-
+  .drummusicfake{
+    height: 0;
+    display: none;
+  }
   .text-padding {
     padding: 0 10px 24px 10px;
   }
